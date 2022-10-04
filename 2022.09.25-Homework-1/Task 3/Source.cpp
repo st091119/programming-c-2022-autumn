@@ -2,14 +2,14 @@
 
 int main(int argc, char* argv[])
 {
-	int N = 0;
-	int K = 0;
+	int n = 0;
+	int k = 0;
 
-	std::cin >> N;
+	std::cin >> n;
 
-	std::cin >> K;
+	std::cin >> k;
 
-	std::cout << K % N << std::endl;
+	std::cout << k % n << std::endl;
 
 	return EXIT_SUCCESS;
 }
