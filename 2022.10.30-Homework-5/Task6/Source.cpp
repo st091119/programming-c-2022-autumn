@@ -3,9 +3,9 @@
 int main(int argc, char* argv[])
 {
 	int n = 0;
-	float a[100]{ 0 };
-	float b[100]{ 0 };
-	float max = 0;
+	int a[100]{ 0 };
+	int b = 0;
+	int max = 0;
 	int maxn = 0;
 
 	std::cin >> n;
@@ -17,16 +17,16 @@ int main(int argc, char* argv[])
 
 	for (int i = 0; i < n; ++i)
 	{
-		std::cin >> b[i];
+		std::cin >> b;
 
-		if ((a[i] * b[i] / 100) > max)
+		if ((a[i] * b) > max)
 		{
-			max = a[i] * b[i] / 100;
-			maxn = i + 1;
+			max = a[i] * b;
+			maxn = i;
 		}
 	}
 
-	std::cout << maxn;
+	std::cout << maxn + 1;
 
 	return EXIT_SUCCESS;
 }

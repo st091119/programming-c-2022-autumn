@@ -12,7 +12,8 @@ int main(int argc, char* argv[])
 		x = x + (1 / (i * m));
 		m = i * m;
 	}
-	std::cout << x;
+	
+	printf("%.5f", x);
 
 	return EXIT_SUCCESS;
 }
