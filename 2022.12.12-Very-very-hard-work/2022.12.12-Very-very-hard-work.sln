@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task2", "Task2\Task2.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task3", "Task3\Task3.vcxproj", "{937AC83C-B78B-4B4D-B3C4-87D751D07900}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task1 переписывание", "Task1 переписывание\Task1 переписывание.vcxproj", "{D4C253CE-AE2B-4948-98E5-3B7B01A4DB8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{937AC83C-B78B-4B4D-B3C4-87D751D07900}.Release|x64.Build.0 = Release|x64
 		{937AC83C-B78B-4B4D-B3C4-87D751D07900}.Release|x86.ActiveCfg = Release|Win32
 		{937AC83C-B78B-4B4D-B3C4-87D751D07900}.Release|x86.Build.0 = Release|Win32
+		{D4C253CE-AE2B-4948-98E5-3B7B01A4DB8A}.Debug|x64.ActiveCfg = Debug|x64
+		{D4C253CE-AE2B-4948-98E5-3B7B01A4DB8A}.Debug|x64.Build.0 = Debug|x64
+		{D4C253CE-AE2B-4948-98E5-3B7B01A4DB8A}.Debug|x86.ActiveCfg = Debug|Win32
+		{D4C253CE-AE2B-4948-98E5-3B7B01A4DB8A}.Debug|x86.Build.0 = Debug|Win32
+		{D4C253CE-AE2B-4948-98E5-3B7B01A4DB8A}.Release|x64.ActiveCfg = Release|x64
+		{D4C253CE-AE2B-4948-98E5-3B7B01A4DB8A}.Release|x64.Build.0 = Release|x64
+		{D4C253CE-AE2B-4948-98E5-3B7B01A4DB8A}.Release|x86.ActiveCfg = Release|Win32
+		{D4C253CE-AE2B-4948-98E5-3B7B01A4DB8A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
