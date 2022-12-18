@@ -4,8 +4,7 @@ int main(int argc, char* argv[])
 {
 	int n = 0;
 	int a[100]{ 0 };
-	int b = 0;
-	int max = 0;
+	int b[100]{ 0 };
 	int maxn = 0;
 
 	std::cin >> n;
@@ -17,12 +16,16 @@ int main(int argc, char* argv[])
 
 	for (int i = 0; i < n; ++i)
 	{
-		std::cin >> b;
+		std::cin >> b[i];
+	}
 
-		if ((a[i] * b) > max)
+	for (int i = 0; i < n; ++i)
+	{
+		if (a[i]*b[i] > a[0]*b[0])
 		{
-			max = a[i] * b;
 			maxn = i;
+			a[0] = a[i];
+			b[0] = b[i];
 		}
 	}
 

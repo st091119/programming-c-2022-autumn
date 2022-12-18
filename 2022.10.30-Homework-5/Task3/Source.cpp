@@ -20,6 +20,10 @@ int main(int argc, char* argv[])
 		{
 			max = a[i];
 		}
+	}
+
+	for (int i = 0; i < n; ++i)
+	{
 		if (a[i] < min)
 		{
 			min = a[i];

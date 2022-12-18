@@ -3,7 +3,6 @@
 int main(int argc, char* argv[])
 {
 	int n = 0;
-	int k = -1001;
 	int l = 0;
 	int r = 0;
 	int ind = 0;
@@ -18,17 +17,17 @@ int main(int argc, char* argv[])
 
 	std::cin >> l >> r;
 
+	ind = l - 1;
 	for (int i = l - 1; i < r; ++i)
 	{
-		if (a[i] > k)
+		if (a[i] > a[l - 1])
 		{
-			k = a[i];
+			a[l - 1] = a[i];
 			ind = i;
-
 		}
 	}
 
-	std::cout << k << " " << ind + 1;
+	std::cout << a[l - 1] << " " << ind + 1;
 
 	return EXIT_SUCCESS;
 }
