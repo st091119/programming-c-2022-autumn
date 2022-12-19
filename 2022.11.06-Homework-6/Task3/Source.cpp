@@ -5,7 +5,6 @@ int main(int argc, char* argv[])
 	int n = 0;
 	int x = 0;
 	int k = 1;
-	int d = 1;
 	int a[100]{ 0 };
 
 	std::cin >> n;
@@ -17,24 +16,12 @@ int main(int argc, char* argv[])
 
 	std::cin >> x;
 
-	for (int i = 0; i < n; ++i)
+	while (x <= a[k - 1])
 	{
-		if (x < a[i])
-		{
-			k += 1;
-		}
-		else
-		{
-			std::cout << k;
-			d = 0;
-			break;
-		}
+		k += 1;
 	}
 
-	if (d == 1)
-	{
-		std::cout << k;
-	}
+	std::cout << k;
 
 	return EXIT_SUCCESS;
 }
