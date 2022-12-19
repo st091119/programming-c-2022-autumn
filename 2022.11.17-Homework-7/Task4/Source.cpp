@@ -1,5 +1,17 @@
 #include <iostream>
 
+int** array(int n, int m)
+{
+	int** res = new int* [n];
+
+	for (int i = 0; i < n; ++i)
+	{
+		res[i] = new int[m] {0};
+	}
+
+	return res;
+}
+
 void del(int** arr, int n)
 {
 	for (int i = 0; i < n; ++i)
@@ -16,53 +28,47 @@ int main(int argc, char* argv[])
 
 	std::cin >> n >> m;
 
-	int** a = new int* [n];
-	int* str = new int[n] {0};
-	int* sto = new int[m] {0};
-
-	for (int i = 0; i < n; ++i)
-	{
-		a[i] = new int[m] {0};
-	}
+	int** a = array(n, m);
+	int** b = array(n, m);
+	int** c = array(n, m);
 
 	for (int i = 0; i < n; ++i)
 	{
 		for (int j = 0; j < m; ++j)
 		{
 			std::cin >> a[i][j];
-
-			str[i] += a[i][j];
-			sto[j] += a[i][j];
 		}
 	}
 
 	for (int i = 0; i < n; ++i)
 	{
-		std::cout << str[i] << " ";
+		for (int j = 0; j < m; ++j)
+		{
+			std::cin >> b[i][j];
+		}
 	}
-
-	std::cout << std::endl;
-
-	for (int i = 0; i < m; ++i)
-	{
-		std::cout << sto[i] << " ";
-	}
-
-	std::cout << std::endl << std::endl;
 
 	for (int i = 0; i < n; ++i)
 	{
 		for (int j = 0; j < m; ++j)
 		{
-			std::cout << a[i][j] << " ";
+			c[i][j] = a[i][j] + b[i][j];
+		}
+	}
+
+	for (int i = 0; i < n; ++i)
+	{
+		for (int j = 0; j < m; ++j)
+		{
+			std::cout << c[i][j] << " ";
 		}
 
 		std::cout << std::endl;
 	}
 
 	del(a, n);
-	delete[] str;
-	delete[] sto;
+	del(b, n);
+	del(c, n);
 
 	return EXIT_SUCCESS;
 }
