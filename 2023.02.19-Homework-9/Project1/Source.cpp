@@ -46,4 +46,6 @@ int main(int argc, char* argv[])
 	printAnimal(baran);
 	elderAnimal(baran);
 	printAnimal(baran);
+
+	return EXIT_SUCCESS;
 }
